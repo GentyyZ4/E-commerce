@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnMall</title>
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img src="Logo.png" class="Logo" onclick="location.href='Homepage.html'">
+        <div class="searchbar">
+            <input type="search" placeholder="Search" class="in1" id="searchInput" onkeyup="performSearch()">
+            <button onclick="performSearch()">Search</button>
+
+
+        </div>
+        <ul class="navbar">
+            <li><a href="Homepage.html" class="li">Home</a></li>
+            <li><a href="AboutUs.html" class="li">About Us</a></li>
+            <li><a href="Contact.html" class="li">Contact</a></li>
+            <div class="cart">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                <span class="quantity">0</span>
+            </div>
+        </ul>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="dropdown-filter">
+            <select id="product-filter">
+                <option value="all">All</option>
+                <option value="shoes">Shoes</option>
+                <option value="hoodies">Hoodies</option>
+                <option value="tshirts">T-Shirts</option>
+            </select>
+        </div>
+        
+        <div class="wrapper">
+            <div class="wrapper-holder">
+                <div id="slider-img-1"></div>
+                <div id="slider-img-2"></div>
+                <div id="slider-img-3"></div>
+                <div id="slider-img-4"></div>
+            </div>
+        </div>
+        <div class="button-holder">
+            <a href="#slider-img-1" class="button"></a>
+            <a href="#slider-img-2" class="button"></a>
+            <a href="#slider-img-3" class="button"></a>
+            <a href="#slider-img-4" class="button"></a>
+        </div>
+    </div>
+    <h2 class="section-title">Shop Products</h2>
+    <section class="shop-container">
+        <div class="products">
+            <div class="product" data-id="1" data-name="Nike Air Force 1" data-price="82.99€" data-category="shoes">
+                <a href="Nike Air Force 1.html"><img src="AirForce.png" alt="Nike Sneakers"></a>
+                <h3>Nike Air Force 1 </h3>
+                <p class="price">Price: 82.99 €</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2" data-name="XPLR Sam And Colby Cool Women/men Hoodie Casual Sweatshirt Sportswear" data-price="21.99€" data-category="hoodies">
+                <a href="CasualHoodie.html"><img src="HOODIES.png" alt="XPLR Sam And Colby Cool Women/men Hoodie Casual Sweatshirt Sportswear"></a>
+                <h3>XPLR Sam And Colby Cool Women/men Hoodie Casual Sweatshirt Sportswear </h3>
+                <p class="price">Price: 21.99 €</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3" data-name="Nike Winflo 10" data-price="72.97€" data-category="shoes">
+                <a href="Winflo10.html"><img src="AIR+WINFLO+10.png" alt="Nike Winflo 10"></a>
+                <h3>Nike Winflo 10</h3>
+                <p class="price">Price: 29.99 €</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product" data-id="4" data-name="Nike Swoosh Club Fleece" data-price="59.97€" data-category="hoodies">
+                <a href="NikeSwoosh.html"><img src="Futura+Swoosh+Baseball+Club+Fl.png" alt="Nike Swoosh Club Fleece"></a>
+                <h3>Nike Swoosh Club Fleece</h3>
+                <p class="price">Price: 59.97 €</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product" data-id="5" data-name="Real Madrid Home Shirt 2024/25" data-price="120.00€" data-category="tshirts">
+                <a href="RealMadrid.html"><img src="RealMadrid.png" alt="Real Madrid Home Shirt 2024/25"></a>
+                <h3>Real Madrid Home Shirt 2024/25</h3>
+                <p class="price">Price: 120.00 €</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product" data-id="6" data-name="Germany Home Shirt 2024/25" data-price="120.00€" data-category="tshirts">
+                <a href="Germany.html"><img src="Germany.png" alt="Germany Home Shirt 2024/25"></a>
+                <h3>Germany Home Shirt 2024/25</h3>
+                <p class="price">Price: 69.95 €</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product" data-id="7" data-name="Nike AirForce" data-price="120.00€" data-category="shoes">
+                <a href="Nike AirForce.html"><img src="NIKE.png" alt="Nike AirForce"></a>
+                <h3>Nike AirForce</h3>
+                <p class="price">Price: 120.00 €</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product" data-id="8" data-name="Loose Fit Sweatshirt" data-price="14.99€" data-category="hoodies">
+                <a href="Loose Fit Sweatshirt.html"><img src="Hoodiee.png" alt="Loose Fit Sweatshirt"></a>
+                <h3>Loose Fit Sweatshirt</h3>
+                <p class="price">Price: 14.99 €</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product" data-id="9" data-name="10-Year Pullover Hoodie" data-price="82€" data-category="hoodies">
+                <a href="10-Year Pullover Hoodie.html"><img src="PulloverHoodie.png" alt="10-Year Pullover Hoodie"></a>
+                <h3>10-Year Pullover Hoodie</h3>
+                <p class="price">Price: 82 €</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product" data-id="10" data-name="Nike Dunk High By You" data-price="155€" data-category="shoes">
+                <a href="Nike Dunk High By You.html"><img src="Nike DunkHIght.png" alt="Adidas Running Shoes"></a>
+                <h3>Nike Dunk High By You</h3>
+                <p class="price">Price: 155 €</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product" data-id="11" data-name="RB Blue & white running shoes for Men" data-price="50€" data-category="shoes">
+                <a href="RB Blue & white running shoes for Men.html"><img src="RunningShoes.png" alt="Adidas Running Shoes"></a>
+                <h3>RB Blue & white running shoes for Men</h3>
+                <p class="price">Price: 50 €</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product" data-id="12" data-name="Men's Carefree Unshrinkable Tee" data-price="39€" data-category="tshirts">
+                <a href="Men's Carefree Unshrinkable Tee.html"><img src="Carefree.png" alt="Adidas Running Shoes"></a>
+                <h3>Men's Carefree Unshrinkable Tee</h3>
+                <p class="price">Price: 39 €</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product" data-id="13" data-name="Men’s Running Sports T-shirt" data-price="20€" data-category="tshirts">
+                <a href="Men’s Running Sports T-shirt.html"><img src="RunningShirt.png" alt="Adidas Running Shoes"></a>
+                <h3>Men’s Running Sports T-shirt</h3>
+                <p class="price">Price: 20 €</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product" data-id="8" data-name="Albanian Football Shirt" data-price="60€" data-category="tshirts">
+                <a href="Albanian Football Shirt.html"><img src="FshF.png" alt="Shqip"></a>
+                <h3>Albanian Football Shirt</h3>
+                <p class="price">Price: 60 €</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product" data-id="9" data-name="Kosovo Football Shirt" data-price="60€" data-category="tshirts">
+                <a href="Kosovo Football Shirt.html"><img src="FFK.jpeg" alt="Kosova"></a>
+                <h3>Kosovo Football Shirt</h3>
+                <p class="price">Price: 60 €</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product" data-id="10" data-name="JOGFLOW 100 Superior Grip Cushioned Men Running Shoes" data-price="50€" data-category="shoes">
+                <a href="JOGFLOW 100 Superior Grip Cushioned Men Running Shoes.html"><img src="Jogflow.jpeg" alt="Kosova"></a>
+                <h3>JOGFLOW 100 Superior Grip Cushioned Men Running Shoes</h3>
+                <p class="price">Price: 50 €</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+           
+            
+      
+        </div>
+    </section>
+    
+    <div class="cart-modal">
+        <h2>Your Cart</h2>
+        <div class="cart-items"></div>
+        <p class="total-price">Total: 0.00 €</p>
+        <button class="checkout-btn" id="checkout-button" onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="Cart.js"></script>
+</body>
+</html>

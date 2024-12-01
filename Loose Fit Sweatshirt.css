@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fff;
+    height: 100%;
+}
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+}
+.Logo {
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 50px;
+    cursor: pointer;
+    z-index: 11;
+    position: relative;
+}
+.navbar {
+    display: flex;
+    justify-content: right;
+    margin-right: 60px;
+    gap: 70px;
+    position: relative;
+    bottom: 95px;
+    list-style-type: none;
+}
+.li {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    color: black;
+    transition: 0.3s ease;
+}
+.li:hover {
+    color: rgb(78, 156, 54);
+}
+svg {
+    width: 30px;
+    position: relative;
+    z-index: 11;
+}
+svg span {
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart span {
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: -5px;
+    left: 100%;
+    padding: 3px 10px;
+}
+.dropdown-filter {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 10;
+}
+#product-filter {
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+.cart-modal {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cart-modal.visible {
+    display: block;
+}
+.cart-modal .cart-items {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+.cart-modal .total-price {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.total-price{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.checkout-btn{
+    background-color: blue;
+    color:white ;
+    border: none;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}
+.container1 {
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+.searchbar {
+    position: relative;
+    bottom: 50px;
+    margin-left: 200px;
+    position: relative;
+    z-index: 10; 
+}
+.searchbar button {
+    height: 36px;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 0 15px;
+    font-size: 14px;
+    background-color: #888;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    z-index: 11;
+    position: relative;
+}
+
+
+
+.in1{
+    width: 300px;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid;
+   
+
+}
+
+.main{
+    width: 100%;
+    height: 500px;
+}
+
+
+.text {
+    position: absolute;
+    top: 130px;
+    right: 650px;
+    text-align: left;
+    max-width: 300px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); 
+     border-radius: 10px;
+}
+
+.product {
+    position: relative;
+    bottom: 450px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+
+}
+
+h2.h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #2C3E50; 
+    margin-bottom: 10px;
+}
+
+.price {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-top: 5px;
+}
+
+.add-to-cart-btn {
+    width: 120px;
+    height: 40px;
+    background-color: #F4D03F; 
+    border: none;
+    color: #2C3E50; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 350px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #D4AC0D;
+    transform: scale(1.05);
+}
+
+
